@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#hobbies {
+    width: 100vw;
+    height: 100px;
+}
+
+section {
+    display: flex;
+    font-family: 'Century Gothic', 'Calibri';
+    color: #4e3b4f;
+}
+
+#sechome {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(162, 98, 175, 0.49);
+}
+
+.navinner {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+.logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 70%;
+}
+
+.navmenu {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-weight: bold;
+}
+
+.navmenu ul {
+    display: flex;
+    gap: 70px;
+}
+
+.navmenu ul a {
+    color: rgb(253, 247, 254);
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(36, 33, 37, 0.818);
+}
+
+.navmenu ul a:hover {
+    color: rgb(179, 71, 179);
+    text-shadow: none;
+}
+
+.navmenu ul li {
+    list-style-type: none;
+}
+
+.homemain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.homeleft {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.homeleft h1 {
+    color: rgba(0, 0, 0, 0);
+}
+
+.homename {
+    width: 50%;
+    height: 30%;
+    display: flex;
+    align-items: end;
+}
+
+.homename img {
+    height: 50%;
+}
+
+.homedesc {
+    width: 50%;
+    height: 20%;
+}
+
+.homedesc h2 {
+    font-weight: normal;
+    font-style: italic;
+    color: rgb(124, 103, 144);
+}
+
+.homeright {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.homerightbox {
+    width: 65%;
+    height: 30%;
+    border-radius: 25px 0px 0px 25px;
+    background-color: rgba(64, 51, 63, 0.714);
+    box-shadow: 5px 3px 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    animation: boxmove 3s ease-in-out 1;
+    animation-direction: reverse;
+}
+
+@keyframes boxmove {
+    from {left: 0%; background-color: rgba(64, 51, 63, 0.714);}
+    to {left: 80%; background-color: rgba(82, 65, 80, 0);}    
+}
+
+.hrbinner1 {
+    width: 80%;
+    height: 25%;
+    font: italic bold 22pt 'Times New Roman';
+    color: rgb(229, 170, 221);
+}
+
+.hrbinner2 {
+    width: 80%;
+    height: 50%;
+}
+
+.readmore a {
+    font-style: italic;
+    color: white;
+}
+
+.readmore a:hover {
+    font-style: italic;
+    text-decoration: none;
+    color: rgb(255, 127, 240);
+}
+
+#sechobbies {
+    width: 100vw;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top:50px;
+    background-color: rgb(118, 21, 94);
+}
+
+@font-face {
+    font-family: "categoryfont";
+    src: url(images/bernadetteregular.ttf) format("truetype");
+}
+
+.category {
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: normal 43pt 'categoryfont', "Brush Script MT Italic";
+    color: #fee9ff;
+}
+
+.categorydark {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: normal 43pt 'categoryfont', "Brush Script MT Italic";
+    color: #6e2270;
+}
+
+.thirdsouterbox {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.thirds img {
+    height: 50px;
+}
+
+.thirdstitle {
+    font-size: 16pt;
+}
+
+.thirdsdescbox {
+    width: 99%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe5f5;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.789) inset;
+    font-weight: normal;
+    color: #4e3b4f;
+}
+
+.thirdsdesc {
+    width: 85%;
+    height: 80%;
+}
+
+.thirds {
+    width: 25%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    color: #ffe5f5;
+}
+
+.img{
+    position: relative;
+    width: 115px;
+    height: 150px;
+    transition: 0.5s;
+    filter: saturate(75%);
+    border: 4px solid #c2abc3;
+}
+
+.button {
+    position: absolute;
+    width: 115px;
+    height: 150px;
+    transition: 0.5s;
+}
+
+.divdesign {
+    height: 55px;
+}
+
+.divdesign img {
+    height: 100%;
+}
+
+#secfooter {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #d4bfcb;
+}
+
+.footerlower {
+    width: 100%;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11pt;
+    color: #6e566f;
+}
+
+@media(min-width: 0px) and (max-width:1039px) {
+    #sechome {
+        background: rgb(245, 215, 242) url(images/RIC03318small.jpg) no-repeat center;
+    }
+
+    .nav {visibility: hidden;}
+
+    #hobbies {height: 0px;}
+    #videos {height: 40px;}
+    #skills {height: 0px;}
+    #reviews {height: 0px;}
+
+    .homemain {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .homeleft {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homename {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .homename img {
+        width: 50%;
+        height: auto;
+    }
+    
+    .homedesc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        height: 20%;
+    }
+
+    .homeright {
+        width: 100vw;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .homerightbox {
+        width: 80%;
+        height: 100%;
+        border-radius: 15px 15px 0px 0px;
+        background-color: rgba(64, 51, 63, 0.714);
+        box-shadow: 2px 2px 4px black;
+    }
+    
+    @keyframes boxmove {
+        from {top: 0%; background-color: rgba(64, 51, 63, 0.714);}
+        to {top: 100%; background-color: rgba(82, 65, 80, 0);}    
+    }
+    
+    .hrbinner1 {
+        width: 85%;
+        height: 20%;
+        font-size: 20pt;
+    }
+    
+    .hrbinner2 {
+        width: 85%;
+        height: 55%;
+        font-size: smaller;
+    }
+    
+    #sechobbies {
+        gap: 10px;
+    }
+
+    .category {
+        font-size: 27pt;
+        height: 8%;
+        margin-top: 30px;
+    }
+    
+    .thirdsouterbox {
+        width: 90%;
+        height: 90%;
+        flex-direction: column;
+        justify-content: end;
+        gap: 10px;
+        margin-bottom: 35px;
+    }
+    
+    .thirds img {
+        position: absolute;
+        top: 0px;
+        height: 20px;
+    }
+    
+    .thirdstitle {
+        width: 40%;
+        position: absolute;
+        top: 0px;
+        left: 30px;
+        font-size: 12pt;
+    }
+    
+    .thirdsdescbox {
+        width: 99%;
+        height: 70%;
+    }
+    
+    .thirdsdesc {
+        width: 85%;
+        height: auto;
+        font-size: smaller;
+    }
+    
+    .thirds {
+        width: 100%;
+        height: 30%;
+        flex-direction: row;
+        align-items: end;
+        position: relative;
+    }
+
+    .categorydark {
+        font-size: 27pt;
+    }
+
+    #secvideos {
+        width: 100vw;
+        height: auto;
+    }
+    
+    .sixtyfortyouterbox {
+        width: 90vw;
+        height: auto;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .sixtyfortyl {
+        width: 100%;
+        height: auto;
+    }
+    
+    .sixtyfortyboxup img {
+        width: 100%;
+    }
+    
+    .sixtyfortyboxup img:hover {
+        border: none;
+    }
+    
+    .sixtyfortyr {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+
+    .sixtyfortyr a {
+        width: 100%;
+    }
+
+    .sixtyfortyrinner {
+        width: 100%;
+        height: auto;
+        gap: 30px;
+    }
+
+    .sixtyfortyr img:hover {
+        border: none;
+    }
+    
+    .sixtyfortyrdesc {
+        font-size: 27pt;
+    }
+    
+    .sixtyfortyrboxup, .sixtyfortyrboxdown {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sixtyfortyrboxup img {
+        height: 100%;
+    }
+
+    .img{
+        width: auto;
+        height: 90%;
+    }
+
+    .divdesign {
+        visibility: hidden;
+        width: 0px;
+    }
+    
+    .shopbuttonoutline {
+        width: 80%;
+    }
+    
+    .shopbutton {
+        width: 100%;
+        height: 77%;
+        font-size: smaller;
+        background-color: #e564f9;
+    }
+    
+    #secfooter {
+        height: 32vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footerlower {
+        width: 100vw;
+        height: 16%;
+        font-size: 9pt;
+    }
+}
+
+@media(min-width: 1040px) {
+    #sechome {
+        background-image: url(images/RIC03318.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
